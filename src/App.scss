@@ -1,0 +1,21 @@
+@import '~antd/dist/antd.css';
+
+* {
+  margin: 0;
+}
+
+a {
+  transition: all 200ms ease;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.pageContent {
+  padding: 80px 0 0 0;
+}

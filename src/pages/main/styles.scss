@@ -1,0 +1,113 @@
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 0 30px 0;
+  max-width: 800px;
+  h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+
+.truckerInfo {
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  background: #fff;
+  padding: 30px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto 30px auto;
+  border-radius: 10px;
+  box-shadow: 4px 4px 7px 0px rgba(102, 102, 102, 0.22);
+
+  span {
+    font-weight: 800;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+  }
+
+  p {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+    font-weight: 500;
+    color: #666;
+  }
+
+  .truckerNumber {
+    width: 100%;
+    font-weight: 700;
+    padding: 0 0 15px 0;
+  }
+
+  .truckerOptions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span {
+      font-weight: 300;
+      display: block;
+      color: #666;
+      padding: 0 10px;
+    }
+  }
+}
+
+#register {
+  display: flex;
+  flex-direction: column;
+
+  label,
+  input {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  input {
+    border: 1px solid #666;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin: 0 0 15px 0;
+    outline: none;
+  }
+
+  button {
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+    background-image: none;
+    border: 1px solid transparent;
+    -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
+    cursor: pointer;
+    -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    height: 32px;
+    padding: 0 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.65);
+    background-color: #fff;
+    border-color: #d9d9d9;
+    background: #1890ff;
+    color: #FFF;
+  }
+}

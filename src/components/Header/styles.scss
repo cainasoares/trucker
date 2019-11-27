@@ -1,0 +1,22 @@
+#mainHeader {
+  background: #1890ff;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  h1 {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    a {
+      color: #FFF;
+      &:hover {
+        opacity: .75;
+      }
+    }
+  }
+}
