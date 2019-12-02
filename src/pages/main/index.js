@@ -3,6 +3,7 @@ import { Button, Modal } from "antd";
 import { Link } from "react-router-dom";
 
 import "./styles.scss";
+import { red } from "ansi-colors";
 
 const users = {
   users: [
@@ -97,7 +98,16 @@ export default class Main extends Component {
     });
   };
 
+
+  componentDidMount() {
+    console.log(users);
+  }
+
+
+
+
   render() {
+
     return (
       <div className="pageContent">
         <div className="container">
@@ -155,10 +165,10 @@ export default class Main extends Component {
                 <p>{trucker.status}</p>
               </div>
 
-              <div className="truckerOptions">
-                <Link to={`/ver/${trucker.id}`}>Ver mais</Link>
-                <span>|</span>
-                <Link to="">Editar</Link>
+              <div className="truckerAddress">
+                <span>Endereço</span>
+                <p>{trucker.addresses.street_name}, {trucker.addresses.street_number}. {trucker.addresses.neighborhood}, {trucker.addresses.city}, {trucker.city}.</p>
+                <p><strong>CEP: </strong>{trucker.addresses.postal_code}</p>
               </div>
             </div>
           ))}
